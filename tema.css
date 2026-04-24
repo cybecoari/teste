@@ -1,0 +1,332 @@
+/* ============================================
+   TEMA ÚNICO - CYBER COARI
+   Responsivo, moderno e consistente
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Cards principais */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 2rem;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* Cards para dashboard (maior) */
+.card-dashboard {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Títulos */
+h1, h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.3px;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.sub {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Grupos de formulário */
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    color: #e2e8f0;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: #f1f5f9;
+    transition: all 0.2s;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+    background: #0f172a;
+}
+
+input::placeholder {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Botões */
+.btn, button[type="submit"] {
+    width: 100%;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover, button[type="submit"]:hover {
+    background: #2563eb;
+    transform: scale(0.98);
+}
+
+.btn-danger {
+    background: #ef4444;
+}
+
+.btn-danger:hover {
+    background: #dc2626;
+}
+
+.btn-success {
+    background: #22c55e;
+}
+
+.btn-success:hover {
+    background: #16a34a;
+}
+
+/* Links */
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.links a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.links a:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+}
+
+/* Mensagens */
+.message {
+    margin-top: 1.2rem;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: none;
+}
+
+.error {
+    background: rgba(220, 38, 38, 0.2);
+    border-left: 4px solid #ef4444;
+    color: #fecaca;
+    display: block;
+}
+
+.success {
+    background: rgba(34, 197, 94, 0.2);
+    border-left: 4px solid #22c55e;
+    color: #bbf7d0;
+    display: block;
+}
+
+/* Tabelas responsivas */
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+th {
+    background: rgba(59, 130, 246, 0.3);
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px 12px;
+    color: #e2e8f0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+tr:hover td {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Status */
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.status-approved {
+    background: #22c55e20;
+    color: #4ade80;
+    border: 1px solid #22c55e40;
+}
+
+.status-pending {
+    background: #f59e0b20;
+    color: #fbbf24;
+    border: 1px solid #f59e0b40;
+}
+
+.status-rejected {
+    background: #ef444420;
+    color: #f87171;
+    border: 1px solid #ef444440;
+}
+
+/* Grid para cards de estatísticas */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.stat-card h3 {
+    color: #94a3b8;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.stat-number {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Header do dashboard */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1.5rem;
+}
+
+/* QR Code */
+.qr-area {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+}
+
+.qr-area img {
+    max-width: 100%;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.codigo-pix {
+    background: #0f172a;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    word-break: break-all;
+    font-size: 0.7rem;
+    margin: 1rem 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    color: #475569;
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+    .card {
+        padding: 1.5rem;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    .dashboard-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
