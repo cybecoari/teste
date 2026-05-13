@@ -1,6 +1,6 @@
 <?php
 
-$token = "7838148953:AAH4VEjBlvBz3NEU4oYieHQaOmiASPnuB_s";
+$token = "seu_token";
 
 // RECEBE DADOS
 $update = json_decode(file_get_contents("php://input"), true);
