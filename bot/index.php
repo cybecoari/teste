@@ -8,7 +8,7 @@
 // ==============================================
 
 // Telegram
-define('TELEGRAM_TOKEN', '7838148953:AAE9S3mZDB-kD6XrF4c2n5oEzjZxuXlU7wE');
+define('TELEGRAM_TOKEN', 'seu_token');
 
 // Mercado Pago
 // define('MP_ACCESS_TOKEN', 'APP_USR-6051070112657004-041817-58f9464f55dc507b51a24891d5c1cbb9-2069289633');
