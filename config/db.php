@@ -8,16 +8,16 @@ error_reporting(E_ALL);
 
 // DADOS DO BANCO
 $host = "localhost";
-$db   = "cybe3195_teste";
-$user = "cybe3195_teste";
-$pass = "@cybercoari";
+$db   = "seu_db";
+$user = "seu_user";
+$pass = "sua_senha";
 
 // ==============================================
 // CONSTANTES GLOBAIS (acessíveis em todo projeto)
 // ==============================================
 
 // TELEGRAM
-define('TELEGRAM_TOKEN', '7838148953:AAE9S3mZDB-kD6XrF4c2n5oEzjZxuXlU7wE');
+define('TELEGRAM_TOKEN', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
 
 // URLs do sistema
 define('BASE_URL', 'https://cybercoari.com.br');

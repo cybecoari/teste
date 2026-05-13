@@ -7,8 +7,8 @@ use MercadoPago\MercadoPagoConfig;
 use MercadoPago\Client\Preference\PreferenceClient;
 use MercadoPago\Client\Payment\PaymentClient;
 
-define('MP_ACCESS_TOKEN', 'APP_USR-6051070112657004-041817-58f9464f55dc507b51a24891d5c1cbb9-2069289633');
-define('MP_PUBLIC_KEY', 'APP_USR-03fbca80-6c61-46d0-839d-343c6b725381');
+define('MP_ACCESS_TOKEN', 'APP_USR-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+define('MP_PUBLIC_KEY', 'APP_USR-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
 define('MP_WEBHOOK_URL', 'https://cybercoari.com.br/api/webhook.php');
 
 MercadoPagoConfig::setAccessToken(MP_ACCESS_TOKEN);

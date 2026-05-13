@@ -19,7 +19,7 @@ if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === 'off') {
 }
 
 // Headers de segurança
-header('X-Powered-By: Cyber Coari System');
+header('X-Powered-By: CYBERCOARI System');
 header('X-Frame-Options: SAMEORIGIN');
 header('X-XSS-Protection: 1; mode=block');
 
@@ -107,7 +107,7 @@ if (!isset($_SESSION['last_regeneration'])) {
 // ========== CONFIGURAÇÕES ==========
 define('MAX_TENTATIVAS', 5);
 define('BLOQUEIO_MINUTOS', 15);
-define('SITE_NAME', 'Cyber Coari');
+define('SITE_NAME', 'CYBERCOARI');
 define('SITE_URL', 'https://' . ($_SERVER['HTTP_HOST'] ?? 'cybercoari.com.br'));
 
 // ========== FUNÇÕES AUXILIARES ==========
