@@ -1,0 +1,7 @@
+# senha/.htaccess
+Options -Indexes
+
+# Forçar HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/senha/$1 [R=301,L]
