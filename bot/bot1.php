@@ -3,7 +3,7 @@
 // BOT TELEGRAM - VENDA DE KEYS COM MERCADO PAGO
 // ==============================================
 
-$token = "7838148953:AAE9S3mZDB-kD6XrF4c2n5oEzjZxuXlU7wE";
+$token = "seu_token";
 $api_url = "https://api.telegram.org/bot$token/";
 
 // SDK Mercado Pago
