@@ -1,0 +1,14 @@
+# admin/.htaccess
+Options -Indexes
+
+# Forçar HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/admin/$1 [R=301,L]
+
+# Bloquear acesso direto a arquivos .php por IPs não autorizados (opcional)
+# <Files "*.php">
+#     Order Deny,Allow
+#     Deny from all
+#     Allow from 192.168.1.0/24
+# </Files>
